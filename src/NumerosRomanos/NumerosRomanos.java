@@ -13,6 +13,10 @@ public class NumerosRomanos
 {
     public static String converter(int num) 
     {
+        if (num > 3999) {
+            return "ERRO";
+        }
+        
         String r = "";
         while (num >= 1000) {
             r = r + 'M';
